@@ -16,7 +16,26 @@
     p {
         color: green;
     }
-</style>
+
+    table {
+        margin-top: 20px;
+        background-color: azure;
+        border: 1px solid black;
+        border-collapse: collapse;
+        height: 100px;
+        width: 200px;
+    }
+
+    th, td {
+        border: 1px solid rgb(0, 0, 0);
+        font-size: 15px; 
+        text-align: center;
+    }
+    caption {
+        font-size: 20px; margin-bottom: 10px;
+    }
+    </style>
+
 <script>
     /*
 
@@ -58,6 +77,131 @@
         </ol>
         <h2>링크 만들어 보기</h2>
         <a href="https://www.naver.com" target="_blank" title="툴팁확인">네이버 바로가기</a>
+    <table>
+        <caption><strong>표 만들어 보기</strong></caption>
+        <colgroup>
+        <col>
+        <col style="background-color: rgb(96, 150, 182);">
+        <col>
+        <col>
+        </colgroup>
+        <thead style="background-color: gray;">
+            <tr>
+                <th>이름</th>
+                <th>성별</th>
+                <th>나이</th>
+                <th>신장</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">김승민</td>
+                <td rowspan="2">남</td>
+                <td>19</td>
+                <td>179cm</td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>190cm</td>
+            </tr>
+            <tr>
+                <td>민경환</td>
+                <td>남</td>
+                <td>22</td>
+                <td>183cm</td>
+            </tr>
+        </tbody>
+    </table>
+    <table>
+        <colgroup>
+        <col>
+        <col>
+        <col>
+        <col>
+        <col>
+        <col>
+        <col>
+        </colgroup>
+        <thead>
+            <tr>
+                <th colspan="2"></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td rowspan="3"></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td colspan="3"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+        </tbody>
+    </table>
         
 </body>
 </html>
