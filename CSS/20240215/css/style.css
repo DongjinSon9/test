@@ -24,7 +24,6 @@ h1 a {
 ol {
     border-right: 1px solid grey;
     width: 100px;
-    height: 1000px;
     margin: 0;
     padding: 20px;
     font-weight: bold;
@@ -42,7 +41,7 @@ li a {
 }
 
 body {
-    margin: 0;
+    margin: 0 auto;
 }
 
 #grid {
