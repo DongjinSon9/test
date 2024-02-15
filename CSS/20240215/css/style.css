@@ -1,0 +1,8 @@
+/* css 파일 안에서는 style 태그 사용하면 안 됨. */
+
+h1 {
+    font-size: 45px;
+    text-align: center;
+    border-bottom: 5px solid gray;
+    margin: 0;
+}
