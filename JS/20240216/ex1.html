@@ -33,8 +33,9 @@
     <input type="button" value="day" onclick="
         document.querySelector('body').style.backgroundColor = 'white';
         document.querySelector('body').style.color = 'black';">
-    <br>
-
+        <h1>키다운 이벤트 확인</h1>
+        <!-- 공식문서에서 deprecated 지원을 안 함. -->
+        <input type="text" onkeydown="alert('key down')">
 
 </body>
 
