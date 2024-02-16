@@ -9,8 +9,18 @@
 
 <body>
     <script>
-        
+        document.write(1 + 1); /* 동적. 계산됨. */
     </script>
+    <h1>1+1</h1> <!-- 정적. 고정된 값. -->
+    <h1>특정 버튼 이벤트 확인</h1>
+    <input type="button" value="hi" onclick="alert('hi')"> <!-- onclick을 부여해서 버튼을 클릭하면 hi라는 문구가 경고창에 뜨도록 만듦. -->
+    <h1>js는 동적이고 html은 정적이다.</h1>
+    <input type="button" value="night" onclick="
+        document.querySelector('body').style.backgroundColor = 'black';
+        document.querySelector('body').style.color = 'white';">
+    <input type="button" value="day" onclick="
+        document.querySelector('body').style.backgroundColor = 'white';
+        document.querySelector('body').style.color = 'black';">
 </body>
 
 </html>

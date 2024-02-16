@@ -15,3 +15,7 @@ document.querySelector('body').style.backgroundColor = 'black';
  객체 : 수납도구       . : 닷연산자. 하위로 연결하는 구분자로 사용한다. 
  예) 탐색기 : > 내pc > 바탕화면 > 폴더
       cmd  : \내pc\바탕화면\폴더
+
+document.write('hello world'); /* document라는 폴더에 write라는 함수가 있고 hello wold를 출력한다. */
+
+alert : alert() 소괄호 안의 내용을 작은 경고창에 표시해서 띄워주는 함수.
