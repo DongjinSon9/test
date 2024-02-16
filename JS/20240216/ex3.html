@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+
+    function printuserid() {
+        var email = document.getElementById('eml').value
+        var password = document.getElementById('pwd').value
+        var password2 = document.getElementById('pwd2').value
+        var name = document.getElementById('name').value
+        var phone = document.getElementById('tel').value
+        var info = "이메일: " + email + ", 비밀번호: " + password + ", 비밀번호 확인: " + password2 + ", 이름: " + name + ", 전화번호: " + phone
+        alert(info)
+    }
+
+    function printmessage() {
+        alert("입력한 정보가 초기화되었습니다.")
+    }
+
+</script>
+
+<body>
+
+    <!-- 연습해보기. 
+      간단한 회원가입 폼 
+      1. 이메일 
+      2. 패스워드 
+      3. 확인용 패스워드 
+      4. 이름 
+      5. 전화번호 
+      결과는 alert 경고창에 보여주기.  -->
+
+    <form>
+        이메일 : <input type="email" id="eml" placeholder="e-mail"><br>
+        패스워드 : <input type="password" id="pwd" placeholder="password"><br>
+        패스워드 확인 : <input type="password" id="pwd2" placeholder="password 확인"><br>
+        이름 : <input type="text" id="name" placeholder="이름"><br>
+        전화번호 : <input type="tel" id="tel" placeholder="전화번호"><br>
+        <input type="button" id="bt" value="제출하기" onclick="printuserid()">
+        <input type="reset" value="초기화하기" onclick="printmessage()">
+    </form>
+</body>
+
+</html>
