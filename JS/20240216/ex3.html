@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/st.css">
     <title>Document</title>
 </head>
 <script>
@@ -38,15 +39,36 @@
       5. 전화번호 
       결과는 alert 경고창에 보여주기.  -->
 
-    <form>
-        이메일 : <input type="email" id="eml" placeholder="이메일"><br>
-        패스워드 : <input type="password" id="pwd" placeholder="비밀번호"><br>
-        패스워드 확인 : <input type="password" id="pwd2" placeholder="비밀번호 재입력"><br>
-        이름 : <input type="text" id="name" placeholder="이름"><br>
-        전화번호 : <input type="tel" id="tel" placeholder="전화번호"><br>
-        <input type="button" id="bt" value="가입하기" onclick="printuserid()">
-        <input type="reset" value="초기화" onclick="printmessage()">
-    </form>
+    <div id="grid">
+        <ol>
+            <li>이메일</li>
+            <li>비밀번호</li>
+            <li>비밀번호 확인</li>
+            <li>이름</li>
+            <li>전화번호</li>
+        </ol>
+
+        <p>
+            : <br>
+            : <br>
+            : <br>
+            : <br>
+            : <br>
+        </p>
+
+        <form>
+            <input type="email" id="eml" placeholder="이메일"><br>
+            <input type="password" id="pwd" placeholder="비밀번호"><br>
+            <input type="password" id="pwd2" placeholder="비밀번호 재입력"><br>
+            <input type="text" id="name" placeholder="이름"><br>
+            <input type="tel" id="tel" placeholder="전화번호"><br>
+            <div id="ipb">
+                <input type="button" id="bt" value="가입하기" onclick="printuserid()">
+                <input type="reset" value="초기화" onclick="printmessage()">
+            </div>
+        </form>
+
+    </div>
 </body>
 
 </html>
