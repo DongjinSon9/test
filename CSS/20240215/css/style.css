@@ -9,14 +9,6 @@ h1 {
     text-decoration: none;
 }
 
-h2 {
-    border-bottom: double;
-    margin-right: 15px;
-    margin-left: 15px;
-    text-indent: 2em;
-    padding-bottom: 10px;
-}
-
 h1 a {
     color: black;
     text-decoration: none;
@@ -79,11 +71,19 @@ li.now {
 
     #grid ol {
         border-right: none; /* ol의 오른선이 사라짐. */
+        border-bottom: 1px solid grey;
+        padding-bottom: 20px;
+        margin-left: 0;
     }
 
-    h1 {
-        border-bottom: none; /* h1의 하단선이 사라짐. */
+    #grid2 {
+        display: block;
     }
+
+    /* h1 {
+        border-bottom: none;         h1의 하단선이 사라짐.
+    } 
+    */
 
     li {
         display: inline;
