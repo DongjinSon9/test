@@ -43,3 +43,13 @@ d. 데코레이션 패턴          >>> 나중에 자바 등에, 파일의 IO(인
 while (조건식) {
     참일 경우 , 반복적으로 실행이 되는 문장.
 }
+
+사칙연산 %  : 나머지
+사칙연산 // : 몫
+
+for문 예시 ---- for(i=0; i<alist.lenth;, i++) {}
+
+var alist = document.querySelectorAll('a');
+console.log(alist[0]);
+console.log(alist[1]);
+console.log(alist.length);                >>>>>>>>>>>> typeof(alist) => object  객체.
