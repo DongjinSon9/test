@@ -18,10 +18,10 @@
         num1 = 2;
         num2 = 2;
 
-         
-        document.write('<h1>'+ sum(num1, num2) +'</h1>');
-        document.write('<h1>'+ sum(1, 2) +'</h1>');
-        document.write('<h1>'+ sum() +'</h1>');         /* 동작 안 함 ; 인자값이 없음. */
+
+        document.write('<h1>' + sum(num1, num2) + '</h1>'); /* 동작 함 ; num1, 2에 값을 대입해서 인자값이 생겨서 작동. */
+        document.write('<h1>' + sum(1, 2) + '</h1>');      /* 동작 함 ; 인자값을 매개변수에 전달해서 작동. */
+        document.write('<h1>' + sum() + '</h1>');         /* 동작 안 함 ; 인자값이 없음. */
 
         function two() {
             document.write('<li>2-1</li>');
@@ -31,6 +31,34 @@
         two();
         document.write('<li>3</li>');
         two();
+    </script>
+    <h1>홀수 표시해보기</h1>
+    <script>
+        var i = 0;
+        while (i < 100) {
+            if (i % 2 == 0) {
+                i = i + 1;
+                document.write(i + '<br>');
+            }
+            i = i + 1;
+        }
+    </script>
+    <h1>배열에 담고 나열해보기</h1>
+    <script>
+        var ilist = [];
+        var ii = 1;
+        while (ii < 101) {
+            if (ilist.length < ii) {
+                ilist.push(ii);
+                ii = ii + 1;
+            }
+        }
+        var j = 0;
+        while (j < ilist.length - 1) {
+            document.write(ilist[j] + ', ');
+            j = j + 1;
+        }        
+        document.write(ilist[j]);
     </script>
 </body>
 
