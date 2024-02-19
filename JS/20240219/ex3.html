@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var alist = document.querySelectorAll('a');
+        var i = 0;
+        /* i = index , 0부터 시작.
+alist = [요소1, 요소2, 요소3, 요소4, 요소5, 요소6]
+           0      1      2     3      4      5
+            */
+        while (i < alist.length) {
+            alist[i].style.color = 'powderblue';
+            console.log(alist[i]);
+            i = i + 1;
+        }
+    </script>
+    <h1> Array </h1>
+    <h2>Syntax</h2>
+    <script>
+        var coworkers = ["egoing", "leezche"];
+    </script>
+    <h2>get</h2>
+    <script>
+        document.write("<h2>" + coworkers[0] + "</h2>");
+        document.write("<h2>coworkers[1]</h2>");
+    </script>
+</body>
+
+</html>
