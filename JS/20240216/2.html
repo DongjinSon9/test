@@ -16,7 +16,7 @@
             <li><a href="3.html">3. JavaScript</a></li>
         </ol>
         <div>
-            <input type="button" id="night_button" value="night" onclick="changecolortest()">
+            <input type="button" id="night_button" value="night" onclick="changecolortest(this)">
             <h2>CSS란 무엇인가?</h2>
             <p style="margin-top: 40px; text-indent: 1em;">
                 Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation
@@ -31,13 +31,17 @@
         </div>
     </div>
     <script>
-        function changecolortest() {
+        /* 
+        1.함수를 호출한다(사용한다)
+        2.함수를 정의한 곳으로 이동한다
+        3.함수를 정의한 곳에서 this 어디로 가냐면 thiss로 간다.
+         */
+        function changecolortest(thiss) {   /* 정의 시 사용되는 소괄호 안의 호칭 = 파라미터, 파라미터 이름값은 아무거나 사용해도 되지만 의미를 담는 게 좋다. */
             var target = document.querySelector('body');
-            var buttonnd = document.getElementById('night_button'); 
-        if (buttonnd.value === 'night') {
+        if (thiss.value === 'night') {
             target.style.backgroundColor = 'black';
             target.style.color = 'white';
-            buttonnd.value = 'day'
+            thiss.value = 'day'
             var alist = document.querySelectorAll('a');
             var i = 0;
             while ( i < alist.length) {
@@ -48,7 +52,7 @@
         } else {
             target.style.backgroundColor = 'white';
             target.style.color = 'black';
-            buttonnd.value = 'night'
+            thiss.value = 'night'
 
             var alist = document.querySelectorAll('a');
             var i = 0;

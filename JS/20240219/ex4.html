@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function sum(num1, num2) {
+            result = 0;
+            result = num1 + num2;
+            return result
+        }
+
+        num1 = 2;
+        num2 = 2;
+
+         
+        document.write('<h1>'+ sum(num1, num2) +'</h1>');
+        document.write('<h1>'+ sum(1, 2) +'</h1>');
+        document.write('<h1>'+ sum() +'</h1>');         /* 동작 안 함 ; 인자값이 없음. */
+
+        function two() {
+            document.write('<li>2-1</li>');
+            document.write('<li>2-2</li>');
+        }
+        document.write('<li>1</li>');
+        two();
+        document.write('<li>3</li>');
+        two();
+    </script>
+</body>
+
+</html>
