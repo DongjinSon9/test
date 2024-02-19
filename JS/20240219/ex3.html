@@ -26,10 +26,80 @@ alist = [요소1, 요소2, 요소3, 요소4, 요소5, 요소6]
     <script>
         var coworkers = ["egoing", "leezche"];
     </script>
-    <h2>get</h2>
+    <h2>get : 배열의 요소를 가져오기.</h2>
     <script>
         document.write("<h2>" + coworkers[0] + "</h2>");
         document.write("<h2>coworkers[1]</h2>");
+    </script>
+    <h2>count : 배열의 요소의 갯수를 표기.</h2>
+    <script>
+        document.write(coworkers.length);
+        document.write("<h2>" + coworkers.length + "</h2>");
+    </script>
+    <h2>add</h2>
+    <script>
+        coworkers.push('duru');
+        coworkers.push('taeho');
+    </script>
+    <h2>count</h2>
+    <script>
+        document.write(coworkers.length);
+    </script>
+    <!-- 
+        연습, 짝구 2 4 6 8 출력해보기 
+        1. while문 사용
+        2. if문 사용
+        3. 사칙연산에서 %=나머지 사용
+    -->
+    <h1>짝수 표시 해보기</h1>
+    <ul>
+        <script>
+            var i = 1;
+            while (i < 10) {
+                if(i % 2 == 0) {
+                    document.write('<li>' + i + '</li>');
+                }
+                i = i + 1;
+            }
+        </script>
+    </ul>
+
+
+
+
+
+
+    <h2>점심메뉴 , 먹고 싶은 메뉴 5개 정해서 반복문으로 출력해보기</h2>
+    <ul>
+        <script>
+            var lunch = ["된장", "칼국수", "우동", "해장국", "국밥"]
+            var i = 0;
+            while (i < lunch.length) {  /* 0 1 2 3 4    5개 출력 */
+                document.write('<li>' + lunch[i] + '</li>');
+                i = i + 1;
+            }
+        </script>
+    </ul>
+
+    <h1>Loop ; 반복문의 필요성 문제제시.</h1>
+    <ul>
+        <script>
+            document.write('<li>1</li>');
+            document.write('<li>2</li>');
+            document.write('<li>3</li>');
+            document.write('<li>4</li>');
+        </script>
+    </ul>
+    <h2>2, 3번째 코드 3번 반복</h2>
+    <script>
+        document.write('<li>1</li>');   /* 상태  변수로, 초기값으로 활용이 되었고, 상태 패턴 */
+        var i = 0;
+        while (i < 3) {         /* 0, 1, 2           3번 실행된다. */
+            document.write('<li>2</li>');
+            document.write('<li>3</li>');
+            i = i + 1;   /* 주의사항; 상태 변수 증가 시키기. */
+        }
+        document.write('<li>4</li>');
     </script>
 </body>
 
