@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+        <input id="night_day" type="button" value="night" onclick="
+      if(document.querySelector('#night_day').value === 'night') {
+          document.querySelector('body').style.backgroundColor = 'black';
+        document.querySelector('body').style.color= 'white';
+        document.querySelector('#night_day').value = 'day';   
+      } else {
+        document.querySelector('body').style.backgroundColor = 'white';
+        document.querySelector('body').style.color= 'black';
+        document.querySelector('#night_day').value = 'night';   
+      }
+      ">
+      <!-- document라는 객체에 night_day라는 아이디의 값이 night일 경우 body의 배경색을 검정색, 글자색을 흰색으로 바꾸고 night_day의 값을 day로 변경한다.
+           night_day의 값이 night가 아닐 경우 body의 배경색을 흰색, 글자색을 검정색으로 바꾸고 night_day의 값을 night로 변경한다. -->
+           
+    <h3>1&gt;2</h3>
+    <script>
+            document.write("<h1>hello</h1>");
+            document.write(1 < 2);
+    </script>
+    <h3>1&lt;1</h3>
+    <script>
+            document.write(1 < 2);
+    </script>
+    <h2>IF-true</h2>
+    <script>
+            document.write("1<br>");
+                if (false) {
+                    document.write("2<br>");
+        }
+                else {
+                    document.write("3<br>");
+        }
+                document.write("4<br>");
+    </script>
+</body>
+
+</html>

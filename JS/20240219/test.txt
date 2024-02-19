@@ -3,3 +3,21 @@
 "1"+ 1 = 11
 문자+숫자=문자
 div 블록 레벨 , span 인라인 레벨
+
+우선 순위 : 아이디 > 클래스 > 선택자
+
+검색 엔진 : JavaScript select tag by css selector                        셀렉트 태그 검색
+https://developer.mozilla.org/ko/docs/Web/API/Document/querySelector
+               
+검색 엔진 : JavaScript element style                                     자바스크립트 요소 스타일 검색
+https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style
+
+= 대입 연산자 
+== 등위 연산자
+=== 일치 연산자(데이터 형도 같이 비교)
+ex) x = 1; y = "1";
+    x == y , true
+    x === y , false
+
+html 엔티티 참고 블로그
+https://miaow-miaow.tistory.com/56
