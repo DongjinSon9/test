@@ -1,0 +1,98 @@
+/* css 파일 안에서는 style 태그 사용하면 안 됨. */
+
+h1 {
+    font-size: 45px;
+    text-align: center;
+    border-bottom: 5px solid gray;
+    margin: 0;
+    padding: 20px;
+    text-decoration: none;
+}
+
+h1 a {
+    color: black;
+    text-decoration: none;
+}
+
+ol {
+    border-right: 1px solid grey;
+    margin: 0;
+    margin-left: 10px;
+    padding: 0;
+    font-weight: bold;
+    padding-top: 20px;
+
+}
+
+li {
+    margin-top: 20px;
+    list-style-type: none;
+}
+
+li a {
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+body {
+    margin: 0 auto;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+}
+
+#grid2 {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.now {
+    color: red;
+}
+
+li.now {
+    background-color: rgb(255, 253, 129);
+}
+
+.link {
+    font-weight: bold;
+    text-decoration: none;
+    color: blue;
+}
+/*------------------------------- 02 16 ----------------------------- */
+
+@media(max-width :800px) {
+    #grid {
+        display: block; /* grid 배치가 블럭레벨로 바뀜. */
+    }
+
+    #grid ol {
+        border-right: none; /* ol의 오른선이 사라짐. */
+        border-bottom: 1px solid grey;
+        padding-bottom: 20px;
+        margin-left: 0;
+    }
+
+    #grid2 {
+        display: block;
+    }
+
+    /* h1 {
+        border-bottom: none;         h1의 하단선이 사라짐.
+    } 
+    */
+
+    li {
+        display: inline;
+        margin-left: 20px;
+    }
+
+    li.now {
+        background-color: transparent;
+        border-bottom: 3px double red;
+    }
+
+}

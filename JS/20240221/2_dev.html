@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1><a href="index.html">WEB</a></h1>
+    <div id="grid">
+        <ol>
+            <li><a href="1.html">1. HTML</a></li>
+            <li class="now"><a href="2.html" class="now">2. CSS</a></li>
+            <li><a href="3.html">3. JavaScript</a></li>
+        </ol>
+        <div>
+            <input type="button" id="night_button" value="night" onclick="changecolortest(this)">
+            <h2>CSS란 무엇인가?</h2>
+            <p style="margin-top: 40px; text-indent: 1em;">
+                Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation
+                of a document written in a markup language such as HTML.[1] CSS is a cornerstone technology
+                of the World Wide Web, alongside HTML and JavaScript.[2]
+                CSS is designed to enable the separation of presentation and content, including layout,
+                colors, and fonts.[3] This separation can improve content accessibility; provide more flexibility
+                and control in the specification of presentation characteristics; enable multiple web pages to
+                share formatting by specifying the relevant CSS in a separate .css file, which reduces complexity
+                and repetition in the structural content
+            </p>
+        </div>
+    </div>
+    <script src="js/colors_dev.js"></script>
+    <!-- 본문에 있던 스크립트 내용들을 따로 분리해서 파일로 만들고 링크 주소를 불러온다. -->
+</body>
+
+</html>

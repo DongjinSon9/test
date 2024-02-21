@@ -1,37 +1,4 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <title>CSS</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-    <h1><a href="index.html">WEB</a></h1>
-    <div id="grid">
-        <ol>
-            <li><a href="1.html">1. HTML</a></li>
-            <li class="now"><a href="2.html" class="now">2. CSS</a></li>
-            <li><a href="3.html">3. JavaScript</a></li>
-        </ol>
-        <div>
-            <input type="button" id="night_button" value="night" onclick="changecolortest(this)">
-            <h2>CSS란 무엇인가?</h2>
-            <p style="margin-top: 40px; text-indent: 1em;">
-                Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation
-                of a document written in a markup language such as HTML.[1] CSS is a cornerstone technology
-                of the World Wide Web, alongside HTML and JavaScript.[2]
-                CSS is designed to enable the separation of presentation and content, including layout,
-                colors, and fonts.[3] This separation can improve content accessibility; provide more flexibility
-                and control in the specification of presentation characteristics; enable multiple web pages to
-                share formatting by specifying the relevant CSS in a separate .css file, which reduces complexity
-                and repetition in the structural content
-            </p>
-        </div>
-    </div>
-    <script>
-        // function ASetColor(color) {   /* ctr + sift + L 로 단어 전체 선택 후 일괄 수정 */
+ // function ASetColor(color) {   /* ctr + sift + L 로 단어 전체 선택 후 일괄 수정 */
         //     var alist = document.querySelectorAll('a');
         //     var i = 0;
         //     while (i < alist.length) {
@@ -132,8 +99,3 @@
                 document.querySelector('body').style.backgroundColor = color;
             }
         }
-    </script>
-    <script src="colors.js"></script>
-</body>
-
-</html>
