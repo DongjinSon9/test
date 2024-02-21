@@ -5,3 +5,11 @@ var result = sum(1, 2)
 
 result
 => 3
+
+함수는 사용을 하면 소멸한다. 함수 안에 있는 변수도 소멸한다.
+
+vscode live server 포트 변경 ( 환경 설정 확장 - live server config - setting port)
+
+문자열 안에 문자열 표기시 '', ""를 따라 사용한다. ex) '  "  "  ',     "   '    '  " 
+
+문자열 + 숫자 => 문자열

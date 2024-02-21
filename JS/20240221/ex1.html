@@ -7,7 +7,40 @@
     <title>Document</title>
 </head>
 
+<!-- 간단한 자바스크립트(바닐라:기본), 확인시 크롬 웹브라우저에서 ctr + sft + j (콘솔창)에서도 확인 가능하다. -->
+
+<script>
+    function sum(num1, num2) {
+        result = 0;
+        result = num1 + num2;
+        return result
+    }
+
+    num1 = 2;
+    num2 = 2;
+
+    var result1 = sum(num1, num2);
+    var result1 = sum(1, 2);
+    sum();
+</script>
+
 <body>
+    <h1> sum 정의</h1>
+    <script>
+        function sum(left, right) {
+            // document.write(left + right + '<br>');
+            return left + right
+        }
+
+        function sumColorRed(left, right) {
+            document.write('<div style="color: red;">' + '<h1>' + left + right + '</h1>' + '</div><br>'); /* left 가 문자열로 바뀜 -> right도 바뀜 */
+            document.write('<div style="color: red;">' + '<h1>' + sum(left, right) + '</h1>' + '</div><br>'); /* sum 함수에 return 키워드를 이용해서 재사용을 했음. */
+        }
+
+        sum(2, 3);
+        sumColorRed(2, 3);
+        sum(3, 4);
+    </script>
 
 </body>
 
