@@ -50,7 +50,7 @@ body {
 }
 
 .now {
-    color: red;
+    color: red !important;
 }
 
 li.now {
