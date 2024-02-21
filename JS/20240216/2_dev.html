@@ -31,15 +31,32 @@
         </div>
     </div>
     <script>
-        function ASetColor(color) {   /* ctr + sift + L 로 단어 전체 선택 후 일괄 수정 */
-            var alist = document.querySelectorAll('a');
-            var i = 0;
-            while (i < alist.length) {
-                alist[i].style.color = color;
-                console.log(alist[i]);
-                i = i + 1;
+        // function ASetColor(color) {   /* ctr + sift + L 로 단어 전체 선택 후 일괄 수정 */
+        //     var alist = document.querySelectorAll('a');
+        //     var i = 0;
+        //     while (i < alist.length) {
+        //         alist[i].style.color = color;
+        //         console.log(alist[i]);
+        //         i = i + 1;
+        //     }
+        // }
+
+
+        var Links = {
+            // 키 : setColor
+            // 값 : function ~ 문장
+            setColor: function (color) {
+                var alist = document.querySelectorAll('a');
+                var i = 0;
+                while (i < alist.length) {
+                    alist[i].style.color = color;
+                    i = i + 1;
+                }
             }
         }
+
+
+
         // a태그의 글자색을 변경
 
         // function BodySetColor(color) {
@@ -76,6 +93,7 @@
                 //     i = i + 1;
                 // }
                 // ASetColor('red')
+                Links.setColor('red')
             }
             else {
                 // target.style.backgroundColor = 'white';
@@ -83,7 +101,7 @@
                 // target.style.color = 'black';
                 // BodySetColor('black')
 
-                
+
                 Body.setBackgroundColor('white')
                 Body.setColor('black')
 
@@ -97,6 +115,7 @@
                 //     i = i + 1;
                 // }
                 // ASetColor('blue')
+                Links.setColor('blue')
 
             }
         }

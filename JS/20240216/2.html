@@ -31,13 +31,14 @@
         </div>
     </div>
     <script>
-        function ASetColor(color) {
-            var alist = document.querySelectorAll('a');
-            var i = 0;
-            while (i < alist.length) {
-                alist[i].style.color = color;
-                console.log(alist[i]);
-                i = i + 1;
+        var ALinks = {
+            setColor: function (color) {
+                var alist = document.querySelectorAll('a');
+                var i = 0;
+                while (i < alist.length) {
+                    alist[i].style.color = color;
+                    i = i + 1;
+                }
             }
         }
         var Body = {
@@ -54,15 +55,14 @@
                 Body.setBackgroundColor('black')
                 Body.setColor('white')
                 thiss.value = 'day'
-
-                ASetColor('red')
+                ALinks.setColor('red')
             }
             else {
                 Body.setBackgroundColor('white')
                 Body.setColor('black')
                 thiss.value = 'night'
 
-                ASetColor('blue')
+                ALinks.setColor('blue')
             }
         }
     </script>
