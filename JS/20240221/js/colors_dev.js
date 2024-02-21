@@ -88,14 +88,28 @@
         }
 
 
+        // jqeury 버전으로 해당 css 속성을 변경
+
+
         //body라는 이름으로 객체 형태이고, 해당 객체 안에 속성으로 익명함수를 이용하고 있다.
 
+        // var Body = {
+        //     setColor: function (color) {
+        //         document.querySelector('body').style.color = color;
+        //     }
+        //     ,    //함수 구분자 ' , ' 를 사용
+        //     setBackgroundColor: function (color) {
+        //         document.querySelector('body').style.backgroundColor = color;
+        //     }
+        // }
         var Body = {
-            setColor: function (color) {
-                document.querySelector('body').style.color = color;
-            }
-            ,    //함수 구분자 ' , ' 를 사용
-            setBackgroundColor: function (color) {
-                document.querySelector('body').style.backgroundColor = color;
-            }
-        }
+            setColor: function(color) {
+         $('body').css('color', color);
+          },
+          setBackgroundColor: function(color) {
+          $('body').css('backgroundColor', color);
+          }
+         }
+
+         
+        
