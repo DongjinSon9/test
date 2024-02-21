@@ -23,3 +23,8 @@ vscode live server 포트 변경 ( 환경 설정 확장 - live server config - s
 배열 = []              ,  객체   = {}
 
 객체 안에 내용의 형태는 key : value 의 형태
+
+기본 for문  :    for ( 초기값; 조건식; 증감 연산자) {}
+ex) for ( var i = 0; i < 10; i++ ) {}
+
+향상된 for문 :  for ( var key in coworkers) {}  >>>> coworkers에서 하나씩 꺼내서 key에 담는다.
