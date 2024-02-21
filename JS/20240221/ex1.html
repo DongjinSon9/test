@@ -83,18 +83,28 @@
 
 
         //객체의 키로 해당 value 값 조회하기.
-        
+
         for (var key in coworkers) {
             document.write('coworkers 객체의 모든 value를 조회해서 가져오기 - ' + coworkers[key] + '<br>');
         }
 
         //객체의 키 + 값 조회
 
-        
+
         for (var key in coworkers) {
             document.write('coworkers 객체의 모든 key와 value를 조회 - ' + key + ' : ' + coworkers[key] + '<br>');
         }
 
+    </script>
+
+    <h2>객체에 함수를 설정 사용</h2>
+    <script>
+        coworkers.showAll = function () {  // coworkers 를 this 로 대체 할 수 있다.
+            for (var key in this) {
+                document.write('객체에 함수로 set, get 예시 : ' + key + ' : ' + this[key] + '<br>');
+            }
+        }
+        coworkers.showAll();
     </script>
 
 

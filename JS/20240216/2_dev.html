@@ -42,12 +42,12 @@
         }
         // a태그의 글자색을 변경
 
-        function BodySetColor(color) {
-            document.querySelector('body').style.color = color;
-        }
-        function BodySetBackgroudSetColor(color) {
-            document.querySelector('body').style.backgroundColor = color;
-        }
+        // function BodySetColor(color) {
+        //     document.querySelector('body').style.color = color;
+        // }
+        // function BodySetBackgroudSetColor(color) {
+        //     document.querySelector('body').style.backgroundColor = color;
+        // }
         // body의 글자색과 배경색을 변경
 
         // 주의사항 : 함수 사용시 인자값으로 문자열 타입으로 입력하기.
@@ -62,9 +62,11 @@
             // var target = document.querySelector('body');
             if (thiss.value === 'night') {
                 // target.style.backgroundColor = 'black';
-                BodySetBackgroudSetColor('black')
+                // BodySetBackgroudSetColor('black')
                 // target.style.color = 'white';
-                BodySetColor('white')
+                // BodySetColor('white')
+                Body.setBackgroundColor('black')
+                Body.setColor('white')
                 thiss.value = 'day'
                 // var alist = document.querySelectorAll('a');
                 // var i = 0;
@@ -73,13 +75,18 @@
                 //     console.log(alist[i]);
                 //     i = i + 1;
                 // }
-                ASetColor('red')
+                // ASetColor('red')
             }
             else {
                 // target.style.backgroundColor = 'white';
-                BodySetBackgroudSetColor('white')
+                // BodySetBackgroudSetColor('white')
                 // target.style.color = 'black';
-                BodySetColor('black')
+                // BodySetColor('black')
+
+                
+                Body.setBackgroundColor('white')
+                Body.setColor('black')
+
                 thiss.value = 'night'
 
                 // var alist = document.querySelectorAll('a');
@@ -89,8 +96,21 @@
                 //     console.log(alist[i]);
                 //     i = i + 1;
                 // }
-                ASetColor('blue')
+                // ASetColor('blue')
 
+            }
+        }
+
+
+        //body라는 이름으로 객체 형태이고, 해당 객체 안에 속성으로 익명함수를 이용하고 있다.
+
+        var Body = {
+            setColor: function (color) {
+                document.querySelector('body').style.color = color;
+            }
+            ,    //함수 구분자 ' , ' 를 사용
+            setBackgroundColor: function (color) {
+                document.querySelector('body').style.backgroundColor = color;
             }
         }
     </script>

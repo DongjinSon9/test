@@ -40,23 +40,26 @@
                 i = i + 1;
             }
         }
-        function BodySetColor(color) {
-            document.querySelector('body').style.color = color;
-        }
-        function BodySetBackgroudSetColor(color) {
-            document.querySelector('body').style.backgroundColor = color;
+        var Body = {
+            setColor: function (color) {
+                document.querySelector('body').style.color = color;
+            }
+            ,    //함수 구분자 ' , ' 를 사용
+            setBackgroundColor: function (color) {
+                document.querySelector('body').style.backgroundColor = color;
+            }
         }
         function changecolortest(thiss) {
             if (thiss.value === 'night') {
-                BodySetBackgroudSetColor('black')
-                BodySetColor('white')
+                Body.setBackgroundColor('black')
+                Body.setColor('white')
                 thiss.value = 'day'
 
                 ASetColor('red')
             }
             else {
-                BodySetBackgroudSetColor('white')
-                BodySetColor('black')
+                Body.setBackgroundColor('white')
+                Body.setColor('black')
                 thiss.value = 'night'
 
                 ASetColor('blue')
