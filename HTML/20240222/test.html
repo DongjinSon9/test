@@ -32,7 +32,7 @@
       </div> -->
             <div class="form-group">
                 <div class="preview" id="imagePreview" onclick="document.getElementById('profile_image').click()">
-                    <img id="previewImage" src="user_profile.png" alt="프로필 이미지">
+                    <img id="preview_UserImage" src="user_profile.png" alt="프로필 이미지">
                 </div>
                 <input type="file" id="profile_image" name="profile_image" class="file-input" accept="image/*"
                     onchange="previewImage(event)">
@@ -104,7 +104,7 @@
             reader.readAsDataURL(event.target.files[0]);
 
             // 기본 이미지 숨기기
-            var defaultImage = document.getElementById('previewImage');
+            var defaultImage = document.getElementById('preview_UserImage');
             if (defaultImage) {
                 defaultImage.style.display = 'none';
             }
